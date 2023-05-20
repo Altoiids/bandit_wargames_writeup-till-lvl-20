@@ -228,7 +228,6 @@ jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 ## Commands Used
 <pre>
 openssl s_client localhost:30001. # s_client option  for making remote connection using ssl/tls s_server for making from server side
-JQttfApK4SeyHwDlI9SXGR50qclOAil1
 </pre> 
 
 ## Flag
@@ -239,6 +238,12 @@ JQttfApK4SeyHwDlI9SXGR50qclOAil1
 
 ## Commands Used
 <pre>
+netstat -aon  # “a” represents all connections and ports, “o” represents the owning process ID, and “n” represents the addresses and port numbers as numerals.it gave portnumbers with listening and tcp connection tried different ports and finally got it.
+openssl s_client localhost:31790 #it gave ssh private key use it to login to next level
+chmod 600 /tmp/private17.key #to modify permissions
+nano /tmp/private17.key #to add private rsa key
+ssh bandit17@localhost -i /tmp/private17.key -p 2220 # to login to next level
+
 
 </pre> 
 
