@@ -94,9 +94,8 @@ P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 # Level - 7
 
 ## Commands Used
-
-find / -user bandit7 -group bandit6 -size 33c -exec ls -la {} + # to find a file with user bandit 7 , group bandit 6 size 33c and ls -la to list it
-# the last file satifies all these. for all other file permission is denied.
+<pre>
+find / -user bandit7 -group bandit6 -size 33c -exec ls -la {} + # to find a file with user bandit 7 , group bandit 6 size 33c and ls -la to list it.the last file satifies all these. for all other file permission is denied.
 cat /var/lib/dpkg/info/bandit7.password
 </pre> 
 
@@ -119,7 +118,7 @@ TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 ## Commands Used
 <pre>
 cat data.txt| uniq -u #uniq helps us to print unique thereby printing the string
-
+</pre>
 ## Flag
 EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 
