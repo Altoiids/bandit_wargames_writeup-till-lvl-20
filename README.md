@@ -1,4 +1,66 @@
 # bandit_wargames_writeup-till-lvl-20
+# Level - 0
+
+## Commands Used
+<pre>
+ssh bandit0@bindit.labs.overthewire.org
+</pre> 
+
+## Flag
+bandit0
+
+# Level - 1
+
+## Commands Used
+<pre> 
+ssh bandit1@bandit.labs.overthewire.org
+ls -a #to list all the files
+cat readme #  to see the content of file
+exit
+#Note : ssh and exit is common in all the levels we have to enter password received in previous level to enter next level.
+</pre> 
+
+## Flag
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+# Level - 2
+
+## Commands Used
+<pre>
+ls -a #to list all the files
+cat ./-#  to see the content of file
+</pre> 
+
+## Flag
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+# Level - 3
+
+## Commands Used
+<pre>
+ls -a #to list all the files
+cat "spaces in this filename" # to see the content of file
+</pre> 
+
+## Flag
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+# Level - 4
+
+## Commands Used
+<pre>
+ls
+cd inhere/
+ls
+ls -al
+cat .hidden
+
+</pre> 
+
+## Flag
+2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+
 # Level - 5
 
 ## Commands Used
@@ -13,21 +75,9 @@ cat ./-file07 #  to see the content of file
 ## Flag
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
+
+
 # Level - 6
-
-## Commands Used
-<pre>
-ls -a #to list all the files
-cd inhere # to get into inhere directory
-ls -a  #to list all the files
-file ./* # to see the datatypes of all the files
-cat ./-file07 #  to see the content of file
-</pre> 
-
-## Flag
-lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
-
-# Level - 7
 
 ## Commands Used
 <pre>
@@ -96,7 +146,7 @@ cat data.txt | base64 —decode #it will decode the text in the file using decod
 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 
 
-# Level - 13
+# Level - 12
 
 ## Commands Used
 <pre>
@@ -109,7 +159,7 @@ cat data.txt|tr 'A-Za-z' 'N-ZA-Mn-za-m' #data.txt present the alphabats have bee
 ## Flag
 JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
-# Level - 14
+# Level - 13
 
 ## Commands Used
 <pre>
@@ -148,7 +198,7 @@ cat data9
 wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 
-# Level - 15
+# Level - 14
 
 ## Commands Used
 <pre>
@@ -160,6 +210,65 @@ cat /etc/bandit_pass/bandit14
 ## Flag
 fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 
+
+# Level - 15
+
+## Commands Used
+<pre>
+nc localhost 30000 #nc command to connect to different server using diff port number on our localhost
+#then submitted previous password and we recieved
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+</pre> 
+
+## Flag
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+# Level - 16
+
+## Commands Used
+<pre>
+openssl s_client localhost:30001. # s_client option  for making remote connection using ssl/tls s_server for making from server side
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+</pre> 
+
+## Flag
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
+
+# Level - 17
+
+## Commands Used
+<pre>
+
+</pre> 
+
+## Flag
+
+
+
+
+
+# Level - 18
+
+## Commands Used
+<pre>
+diff passwords.old passwords.new #did as directed
+</pre> 
+
+## Flag
+hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+
+
+
+# Level - 19
+
+## Commands Used
+<pre>
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme #by doing this cat will be executed before we logout so we will get the password.
+</pre> 
+
+## Flag
+awhqfNnAbc1naukrpqDYcF95h7HoMTrC
 
 
 # Level - 20
